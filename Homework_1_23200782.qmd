@@ -1,0 +1,65 @@
+---
+title: "Homework_1_23200782"
+author: "Shivani"
+format: html
+echo : false
+---
+<style>
+  h2 {
+    color: blue;
+  }
+</style>
+---
+
+## [**Introduction:**]{.underline}
+
+We are using the following :
+
+1\) [*Package*]{.underline} - ggplot2\
+2) [*Dataset*]{.underline} - mpg
+
+## [**Dataset:**]{.underline}
+
+This dataset contains fuel economy data for various car models, contains observations collected by the US Environmental Protection Agency on 38 popular car models.
+
+The dataset includes variables such as manufacturer, model, engine displacement, year, and fuel economy metrics.
+
+## [**Plot:**]{.underline}
+
+Visualizing the relationship between engine displacement and highway miles per gallon (MPG) using a scatter plot.
+
+```{r}
+# Loading necessary package
+library(ggplot2)
+
+# Loading the dataset
+data(mpg)
+
+# Creating the scatter plot
+p <- ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point() +
+  labs(title = "Engine Displacement vs Highway MPG",
+       x = "Engine Displacement (liters)",
+       y = "Highway MPG") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+#Displaying the plot
+p
+```
+
+## [Plot Description:]{.underline}
+
+Plot Description
+
+The scatter plot titled "Engine Displacement vs Highway MPG" illustrates the relationship between engine displacement (in liters) and highway miles per gallon (MPG) for various car models.
+
+\- [*X-axis*]{.underline}*:* Represents the engine displacement in liters.
+
+\- [*Y-axis*]{.underline}*:* Represents the highway miles per gallon (MPG).
+
+\- [*Points*]{.underline}*:* Each point on the plot represents a car model.
+
+\- [*Color*]{.underline}*:* Points are colored based on the class of the car (e.g., SUV, compact, etc.).
+
+The plot shows that as the engine displacement increases, the highway MPG tends to decrease. This indicates that cars with larger engines generally have lower fuel efficiency on the highway. The color differentiation helps in identifying the class of cars, providing insights into how different types of vehicles perform in terms of fuel efficiency.
