@@ -38,7 +38,7 @@ data(mpg)
 # Creating the scatter plot
 p <- ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point() +
-  labs(title = "Engine Displacement vs Highway MPG",
+  labs(title = "Engine Displacement (liters) vs Highway MPG",
        x = "Engine Displacement (liters)",
        y = "Highway MPG") +
   theme_minimal() +
