@@ -51,7 +51,7 @@ p
 ## [Plot Description:]{.underline}
 
 
-The scatter plot titled "Engine Displacement vs Highway MPG" illustrates the relationship between engine displacement (in liters) and highway miles per gallon (MPG) for various car models.
+The scatter plot titled "Engine Displacement (liters) vs Highway MPG" illustrates the relationship between engine displacement (in liters) and highway miles per gallon (MPG) for various car models.
 
 \- [*X-axis*]{.underline}*:* Represents the engine displacement in liters.
 
